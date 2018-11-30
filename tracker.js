@@ -40,6 +40,14 @@ function reportHealth(list){
   return sum/count;
 }
 function update(){
-  Math.random(0, 1);
-  for(let i=o; i<list.length; i++)
+  for(let i = 0; i < seeds.length; i++){
+    let r = Math.random()
+    if(r > seeds[i]){
+      seeds[i] = r;
+    }
+    else(r < 0.03){
+      seeds[i] = null;
+      percent[i] = 0;
+    }
+  }
 }

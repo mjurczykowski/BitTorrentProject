@@ -15,7 +15,7 @@ function buildTorrentPacketArray(numOfPackets)
     for (let i=0; i < numOfPackets; i++){
     list[i] = 1
     }
-
+return list
 
 
 }
